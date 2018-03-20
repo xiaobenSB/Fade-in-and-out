@@ -57,3 +57,17 @@
   };
 window.Fade = Fade;
 })();
+
+
+
+//测试使用
+let btn = document.getElementsByTagName('button')[0];
+ let btn2 = document.getElementsByTagName('button')[1];
+ btn.onclick = () => {
+  let fade = new Fade('div1');
+ fade.fadeIn();
+ };
+ btn2.onclick = () => {
+  let fade = new Fade('div1');
+  fade.fadeOut();
+ }
