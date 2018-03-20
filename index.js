@@ -41,7 +41,7 @@ Fade.prototype={
              num += speed;
              fadeFlag = false ;
              this.setOpacity(num);
-         /*配合css样式处理--》*/this.elem.style.opacity !== undefined ? this.elem.style.opacity = num/100 : this.elem.style.filter = "alpha(opacity="+num+")";
+         /*配合css样式处理-->>*/this.elem.style.opacity !== undefined ? this.elem.style.opacity = num/100 : this.elem.style.filter = "alpha(opacity="+num+")";
              if(num >= opacity){
                  clearInterval(time);
                  fadeFlag = true;
